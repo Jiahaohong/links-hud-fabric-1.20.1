@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "linkshud",
+	"version": "${version}",
+	"name": "Link's Hud",
+	"description": "Link's Hud!",
+	"authors": [
+		"Yillia"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/linkshud/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.yillia.linkshud.LinksHud"
+		],
+		"client": [
+			"net.yillia.linkshud.LinksHudClient"
+		],
+		"fabric-datagen": [
+			"net.yillia.linkshud.LinksHudDataGenerator"
+		]
+	},
+	"mixins": [
+		"linkshud.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"seasons": ">=2.3"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
